@@ -1,6 +1,6 @@
 header {
     /* border: 0.1rem solid red; */
-    height: 2rem;
+    height: 4rem;
     background-color: #252523;
     color: #eee;
     display: flex;
@@ -11,9 +11,9 @@ header {
 }
 
 .logo{
-    border: .1rem blue solid;
+    border: 0.1rem blue solid;
     background-color: blue;
-    color: #eeee;
+    color: #eee;
     font-weight: bold;
     border-radius: 100%;
     width: 1rem;
@@ -36,7 +36,7 @@ header {
     border-radius: 100%;
     width: 1rem;
     height: 1rem;
-    padding: .8rem;
+    padding: 0.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
