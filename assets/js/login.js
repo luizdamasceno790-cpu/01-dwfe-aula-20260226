@@ -2,13 +2,14 @@ const email = "luizdamasceno790@gmail.com";
 const senha  = "1234";
 
 function verificarCredencias(){
-    cont emailInformado = document.getElementById("email").value;
-    cont senhaInformado = document.getElementById("senha").value;
+    const emailInformado = document.getElementById("email").value;
+    const senhaInformada = document.getElementById("senha").value;
 
     if (emailInformado === email){
         alert("E-mail informado corretamente!");
         if (senhaInformada === senha){
             alert("Senha informada corretamente!");
+            window.location = "home.html";
         }
         else
             alert("Senha informada incorretamente!");
