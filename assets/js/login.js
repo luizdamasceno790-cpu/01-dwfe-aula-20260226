@@ -1,18 +1,27 @@
-const email = "luizdamasceno790@gmail.com";
-const senha  = "1234";
+import { usuario } from "./bd.js";
 
-function verificarCredencias(){
+const email = usuario.email;
+const senha = usuario.senha;
+
+function verificarCredenciais() {
     const emailInformado = document.getElementById("email").value;
     const senhaInformada = document.getElementById("senha").value;
 
-    if (emailInformado === email){
+    if (emailInformado === email) {
         alert("E-mail informado corretamente!");
-        if (senhaInformada === senha){
+        if (senhaInformada === senha) {
             alert("Senha informada corretamente!");
-            window.location = "home.html";
-        }
-        else
+            window.location = "./home.html";
+        } else
             alert("Senha informada incorretamente!");
-    }else 
-        alert ("E-mail informado incorretamente!");
+    } else
+        alert("E-mail informado incorretamente!");
 }
+
+document.addEventListener("DOMContentLoaded", () =>  {
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", (e) =>  {
+        e.preventDefault();
+        verificarCredenciais();
+    });
+});

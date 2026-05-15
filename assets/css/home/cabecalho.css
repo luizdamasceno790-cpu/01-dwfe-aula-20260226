@@ -1,23 +1,23 @@
 header {
-    /* border: 0.1rem solid red; */
+    /* border: .1rem red solid; */
     height: 4rem;
-    background-color: #252523;
-    color: #eee;
     display: flex;
-    /* justify-content: center; */
-    align-content: center;
+    /*justify-content: center;*/
     align-items: center;
-    padding: .5rem;
+    align-content: center;
+    padding: 0.5rem;
+    background-color: #252323;
+    color: #eee;
 }
 
-.logo{
+.logo {
     border: 0.1rem blue solid;
     background-color: blue;
+     width: 1rem;
+    height: 1rem;
     color: #eee;
     font-weight: bold;
     border-radius: 100%;
-    width: 1rem;
-    height: 1rem;
     padding: .7rem;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ header {
 }
 
 .titulo {
-    /* border: 1rem solid white; */
+    /* border: .1rem solid white; */
     flex: 1;
 }
 
@@ -36,25 +36,23 @@ header {
     border-radius: 100%;
     width: 1rem;
     height: 1rem;
-    padding: 0.8rem;
+    padding: .8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     background-color: #464646;
-
 }
 
-.menu-hamburguer i{
+.menu-hamburguer i {
     font-size: 1.2rem;
     color: #ccc;
 }
 
 .menu-hamburguer:hover i {
-    color:#eee;
+    color: #eee;
 }
 
-.menu-hamburguer i:hover{
-    color:white;
-
+.menu-hamburguer i:hover {
+    color: white;
 }
